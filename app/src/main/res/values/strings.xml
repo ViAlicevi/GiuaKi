@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Giua Ki</string>
+    <string name="login_button">Login</string>
+    <string name="capital">Ha Noi</string>
+    <string name="capital1">Lon Don</string>
+    <string name="capital2">Paris</string>
+    <string name="capital3">New York</string>
+
+</resources>
