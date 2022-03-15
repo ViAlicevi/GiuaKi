@@ -5,14 +5,17 @@ import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
 import com.example.giuaki.adapter.ItemAdapter
 import com.example.giuaki.data.Datasource
+import com.example.giuaki.databinding.ActivitySecondBinding
 
 class SecondActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySecondBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_second)
-        val myDataset = Datasource().loadAffirmations()
+        binding = ActivitySecondBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val myDataset = Datasource().loadCapital()
 
-        val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
+        val recyclerView = binding.recyclerView
         recyclerView.adapter = ItemAdapter(this, myDataset)
 
         recyclerView.setHasFixedSize(true)

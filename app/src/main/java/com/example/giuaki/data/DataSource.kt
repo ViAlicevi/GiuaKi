@@ -5,7 +5,7 @@ import com.example.giuaki.model.Capital
 
 class Datasource {
 
-        fun loadAffirmations(): List<Capital> {
+        fun loadCapital(): List<Capital> {
             return listOf<Capital>(
                 Capital(R.string.capital),
                 Capital(R.string.capital1),
